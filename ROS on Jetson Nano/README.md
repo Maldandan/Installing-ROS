@@ -2,17 +2,17 @@
 
 #### https://github.com/Discombobulated88/Xubuntu-20.04-L4T-32.3.1/releases/download/v1.0/Xubuntu-20.04-l4t-r32.3.1.tar.tbz2
 
-### download balena
+## download balena
 
 
 #### https://www.balena.io/etcher/
 
 after downloading both, we Should be writing xubuntu on a flash or card useing balena
 
-## ros2 install
+# ros2 install
 
 
-### Set locale
+## Set locale
 
 Make sure you have a locale which supports UTF-8. If you are in a minimal environment (such as a docker container), the locale may be something minimal like POSIX. We test with the following settings. However, it should be fine if you’re using a different UTF-8 supported locale.
 ```
@@ -58,7 +58,7 @@ Then add the repository to your sources list.
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```
 
-### Install ROS 2 packages
+## Install ROS 2 packages
 
 Update your apt repository caches after setting up the repositories.
 
@@ -84,7 +84,7 @@ ROS-Base Install (Bare Bones): Communication libraries, message packages, comman
 sudo apt install ros-foxy-ros-base
 ```
 
-### Environment setup
+## Environment setup
 ```
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
